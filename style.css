@@ -13,11 +13,19 @@ Body {
     box-sizing: border-box;
 }
 
+.img-container{
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+    max-height: 500px;
+
+}
 .links {
     display: flex;
     justify-content: center;
     flex: 1;
-
+    width: 100%;
 }
 
 .rechts {
@@ -48,7 +56,6 @@ Body {
 
 .post {
     display: flex;
-    height: 500px;
     padding: 20px;
     flex-direction: column;
     border-radius: 16px;
@@ -180,6 +187,7 @@ p {
     object-fit: cover;
     overflow: hidden;
     border-radius: 5px;
+
 }
 
 .post-head {
@@ -258,20 +266,22 @@ p {
     }
 
     #storys {
-        width: 100vw;
+        width: 97vw;
         margin-bottom: 10px;
         margin-top: 10px;
+        justify-content: left;
     }
     #wrapper {
         display: block;
         padding-top: 10px;
     }
 }
-
 @media(max-width:860px) {
     #storys {
         height: 85px;
         overflow: auto;
+        width: 95vw;
+        justify-content: left;
     }
 
     .post {
@@ -303,5 +313,4 @@ p {
     #logged_mobile {
         display: none;
     }
-   
 }

@@ -115,7 +115,9 @@ function SinglePostTemplate(pic, i) {
                             <p>                             ${pic['City']}</p>
                         </span>
                 </div>
+                <div class="img-container">
                 <img class="postimg" id="img${i}" src="${pic['Picture']}"></img>
+                </div>
                 <div class="lmn" id="lmn${i}">
               
                 </div>
@@ -198,7 +200,9 @@ function TimelineTemplate(i, user, userPicture) {
                             <p>                             ${user['City']}</p>
                         </span>
                 </div>
+                <div class="img-container">
                 <img class="postimg" id="img${i}" src="${userPicture}"></img>
+                </div>
                 <div class="lmn" id="lmn${i}">
                 <input placeholder="search">
                 </div>
